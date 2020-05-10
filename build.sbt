@@ -8,6 +8,10 @@ lazy val commonSettings = Seq(
 // Refine scalac params from tpolecat
   scalacOptions --= Seq(
     "-Xfatal-warnings"
+  ),
+  scalacOptions ++= Seq(
+    "-Xsource:2.11",
+    "-language:reflectiveCalls"
   )
 )
 
@@ -21,7 +25,7 @@ lazy val root = (project in file("."))
     organization := "Neurodyne",
     name := "hello",
     version := "0.0.1",
-    scalaVersion := "2.13.1",
+    scalaVersion := "2.12.10",
     maxErrors := 3,
     commonSettings,
     chiselDeps
