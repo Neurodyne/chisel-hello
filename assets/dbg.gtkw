@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Sun May 10 21:23:05 2020
+[*]
+[dumpfile] "/home/bku/work/nd/chisel-hello/out/vlog_vcd/GCD.vcd"
+[dumpfile_mtime] "Sun May 10 21:18:37 2020"
+[dumpfile_size] 58414
+[savefile] "/home/bku/work/nd/chisel-hello/assets/dbg.gtkw"
+[timestart] 212
+[size] 1920 1052
+[pos] -1949 -56
+*-3.232734 245 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 223
+[signals_width] 215
+[sst_expanded] 1
+[sst_vpaned_height] 311
+@28
+TOP.clock
+@29
+TOP.reset
+@28
+TOP.io_loadingValues
+@22
+TOP.io_outputGCD[15:0]
+@28
+TOP.io_outputValid
+@22
+TOP.io_value1[15:0]
+TOP.io_value2[15:0]
+[pattern_trace] 1
+[pattern_trace] 0
