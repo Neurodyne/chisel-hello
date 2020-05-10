@@ -1,6 +1,9 @@
 sim:
 	@sbt test
 
+emit:
+	@sbt testOnly *EmiterSpec
+
 view:
 	@gtkwave out/vlog_vcd/GCD.vcd assets/dbg.gtkw &
 	
