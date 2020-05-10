@@ -16,8 +16,14 @@ lazy val commonSettings = Seq(
 )
 
 lazy val chiselDeps = libraryDependencies ++= Seq(
-  "edu.berkeley.cs" %% "chisel3" % Version.chisel,
-  "edu.berkeley.cs" %% "firrtl"  % Version.firrtl
+  "edu.berkeley.cs" %% "chisel3"          % Version.chisel,
+  "edu.berkeley.cs" %% "firrtl"           % Version.firrtl,
+  "edu.berkeley.cs" %% "chisel-iotesters" % Version.testers
+)
+
+lazy val zioDeps = libraryDependencies ++= Seq(
+  "dev.zio" %% "zio-test"     % Version.zio % "test",
+  "dev.zio" %% "zio-test-sbt" % Version.zio % "test"
 )
 
 lazy val root = (project in file("."))
@@ -28,7 +34,9 @@ lazy val root = (project in file("."))
     scalaVersion := "2.12.10",
     maxErrors := 3,
     commonSettings,
-    chiselDeps
+    zioDeps,
+    chiselDeps,
+    testFrameworks := Seq(new TestFramework("zio.test.sbt.ZTestFramework"))
   )
 
 // Aliases

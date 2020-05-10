@@ -1,7 +1,5 @@
 package hw
 
-import scala.language.reflectiveCalls
-
 import chisel3._
 import chisel3.util.MuxCase
 
