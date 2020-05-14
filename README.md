@@ -15,7 +15,7 @@ This will serve as a setup example for other projects and will help newcomers to
 `Chisel` requires a basic understanding and experience with both `Scala` and hardware design and is NOT suitable as the first introduction project for students and inexperienced users
 
 3. Digital design experience is required <br>
-You should be comfortable with basic to intermediate concepts of Hardware Design and have a hands-on-experience with `Verilog`, working with waveforms and debugging digital designs
+You should be comfortable with basic to intermediate concepts of Hardware Design and have a hands-on experience with `Verilog`, working with waveforms and debugging digital designs
 
 ## Installation
 
@@ -52,6 +52,13 @@ You should be comfortable with basic to intermediate concepts of Hardware Design
 ```bash
   make view
 ```
+
+## Resources 
+1. [Why? Chisel vs System Verilog](https://stackoverflow.com/questions/53007782/what-benefits-does-chisel-offer-over-classic-hardware-description-languages) - How Chisel is better than System Verilog and why would you be interested
+2. [Chisel CookBook](https://github.com/freechipsproject/chisel3/wiki/Cookbook) - Intro docs with examples
+3. [Online Documentation](https://www.chisel-lang.org/api/latest/chisel3/index.html) - Full online reference in Java Docs
+4. [Chisel Advanced](https://inst.eecs.berkeley.edu/~cs250/sp17/handouts/advanced-chisel.pdf) - Learn advanced techniques and code examples
+5. [Online Runtime](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master) - Run Chisel Code in Jupyter Notebook
 
 ## Tech support 
 1. Open issues in this repo
