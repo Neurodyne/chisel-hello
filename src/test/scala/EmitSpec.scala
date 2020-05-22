@@ -12,19 +12,23 @@ object EmiterSpec extends DefaultRunnableSpec {
   def spec = suite("Emiter Spec")(
     suite("Emitter Suite")(
       test("High Form emit") {
-        emiter.emit(firHome, bufCircuit, High)
+        modes.foreach(emiter.emit(firHome, bufCircuit, _))
         assert(true)(isTrue)
       },
       test("Low Form emit") {
-        emiter.emit(firHome, cntCircuit, Low)
+        modes.foreach(item => emiter.emit(firHome, cntCircuit, item))
         assert(true)(isTrue)
       },
       test("High Form emit complex") {
-        emiter.emit(firHome, gcdCircuit, Verilog)
+        modes.foreach(item => emiter.emit(firHome, gcdCircuit, item))
         assert(true)(isTrue)
       }
     )
   )
+  val modes = Set(High, Low, Verilog)
+
+  val emiter: Emiter = new Emiter() {}
+
 }
 
 object Helper {
@@ -39,5 +43,4 @@ object Helper {
   )
   val gcdCircuit: Seq[ChiselGeneratorAnnotation] = Seq(chisel3.stage.ChiselGeneratorAnnotation(() => new GCD()))
 
-  val emiter: Emiter = new Emiter() {}
 }
